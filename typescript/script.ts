@@ -46,3 +46,18 @@ const getMenu = (menu: Menu[]): number => {
 };
 
 getMenu([{ id: 1, name: "shan kyawt swell", type: "sweet" }]);
+
+//destructuring
+
+interface Test {
+  name: string;
+  age: number;
+  gender: string;
+}
+
+const student = { name: "agag", age: 12, gender: "male" };
+
+const getStudentAge = ({ age }: Test): number => {
+  //use {age} insead of student=>destructuring
+  return age;
+};
